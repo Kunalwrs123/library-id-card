@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholar library virtual id-card</title>
+    <style>
+        body {
+            margin: 0;
+          
+        }
+        h1, h2{
+            margin: 0;
+        }
+
+        .library-name {
+            background-color: red;
+            color: whitesmoke;
+            font-size: 48px;
+            padding: 5px 30px;
+            text-align: center;
+        }
+        .address {
+            background-color: skyblue;
+            font-size: 24px;
+            color: chocolate;
+            text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            gap: 15px;
+            grid-template-columns: 2fr 2fr  1fr;
+            grid-column: span 2;
+        }
+        .grid-item {
+            background-color: bisque;
+            padding: 20px;
+            color: darkred;
+        }
+        .students-img {
+            grid-row: span 2;
+           min-width: 200px;
+           max-width: 250px;
+            height: 250px;
+        }
+        .name {
+            grid-column: span 3;
+        }
+        .fathers {
+            order: 1;
+            grid-column: span 3;
+
+        }
+        .footer {
+            font-size: 20px;
+            text-align: center;
+            background-color: aqua;
+           width: 150px;
+           margin: 1% 40%;
+           padding: 10px;
+           border-radius: 5px;
+
+           
+           
+            
+            
+        }
+        p {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main container">
+        <div class="library-name">
+           <h1> SCHOLAR <span>LIBRARY</span></h1>
+        </div>
+        <div class="address">
+            <h2>purani Bank Road, <span>Near Sharma Studio, 7654516579</span><span>(Warisaliganj)</span></h2>
+        </div>
+
+
+        <div class="student-details grid-container">
+            <div class="reg grid-item">
+                <p>Reg. No.</p>
+            </div>
+            <div class="seat grid-item">
+                <p>Seat No.</p>
+            </div>
+            <div class="students-img grid-item">
+               <img src="" alt="Student's img">
+            </div>
+            <div class="shift grid-item">
+                <p>Shift</p>
+            </div>
+            <div class="locker grid-item">
+                <p>Locker</p>
+            </div>
+            <div class="name grid-item">
+                <p>Student's Name</p>
+            </div>
+            <div class="fathers grid-item">
+                <p>Father's Name</p>
+            </div>
+           
+
+        </div>
+          <div class="footer">
+            <a href="Back-id.html">Payment Details</a>
+          </div>
+    </div>
+</body>
+</html>

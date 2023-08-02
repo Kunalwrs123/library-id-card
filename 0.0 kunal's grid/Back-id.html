@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play With Grid</title>
+    
+
+    <style>
+        body {
+            margin: 0;
+        }
+     .flex-container {
+       display: flex;
+       flex-direction: column;
+      /* align-items: center; */
+      text-align: center;
+     }
+     .items {
+        flex-basis: 100%;
+     }
+     .one {
+        background-color: orangered;
+        font-size: 48px;
+        color: purple;
+        padding: 1% 5%;
+        font-weight: bold;
+       
+     }
+     .two {
+
+     }
+     h1 {
+        margin: 0;
+     }
+     .two { 
+        background-color: burlywood;
+        font-size: 36px;
+        padding: 1% 5%;
+
+     }
+     h2 {
+        margin: 0;
+     }
+
+     .three {
+        background-color: darkgrey;
+        font-size: 24px;
+     }
+     h3{
+        margin: 0
+        ;
+     }
+
+
+     .grid-container {
+       display: grid;
+       gap: 1.5rem;
+       grid-template-columns: repeat(4, 1fr);
+       grid-template-rows: repeat(3, 200px);
+
+      
+     }
+     .grid-items {
+      background-color: aqua;
+      font-size: 24px;
+      padding: 10px;
+      color: chocolate;
+      /* height: 200px;
+      width: 200px; */
+    
+     }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+       <div class="items one">
+        <h1> SCHOLAR <span>LIBARRY</span></h1>
+       </div>
+       <div class="items two">
+        <h2>Date of Admission - ...........</h2>
+       </div>
+      <div class="items three">
+        <h3>Payment Details</h3>
+      </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-items">jan</div>
+        <div class="grid-items">feb</div>
+        <div class="grid-items">march</div>
+        <div class="grid-items">april</div>
+        <div class="grid-items">may</div>
+        <div class="grid-items">june</div>
+        <div class="grid-items">july</div>
+        <div class="grid-items">august</div>
+        <div class="grid-items">sep</div>
+        <div class="grid-items">oct</div>
+        <div class="grid-items">nov</div>
+        <div class="grid-items">dec</div>
+       
+       
+        
+    </div>
+
+</body>
+</html>
